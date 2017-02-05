@@ -10,6 +10,8 @@ node_binary(
     ],
 )
 
+filegroup(name="tsconfig", srcs=["tsconfig.json.tpl"])
+
 config_setting(
     name = "darwin",
     values = {"host_cpu": "darwin"},
